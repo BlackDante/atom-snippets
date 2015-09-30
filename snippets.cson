@@ -1,0 +1,49 @@
+# JavaScript ES6
+'.source.js':
+    'Import':
+        'prefix': 'im'
+        'body': 'import $1 from "$2";'
+    'ArrowFunction':
+        'prefix': '=>'
+        'body': '($1) => { $2 }'
+    'Extend':
+        'prefix': 'extend'
+        'body': '''
+            class $1 extends $2 {
+                constructor() {
+                    super();
+                }
+            }
+            '''
+    'Promise':
+        'prefix': 'promise'
+        'body': '''
+            new Promise((resolve) => {
+                    $1
+                });
+            '''
+    'Foreach':
+        'prefix': 'foreach'
+        'body': '''
+            $1.forEach(($2) => {
+                $3
+            });
+            '''
+    'Module':
+        'prefix': 'mod'
+        'body': '''
+            class $1 {
+
+            }
+
+            export default $1
+            '''
+    'ModuleExtend':
+        'prefix': 'modext'
+        'body': '''
+            class $1 extends $2 {
+
+            }
+
+            export default $1
+            '''
